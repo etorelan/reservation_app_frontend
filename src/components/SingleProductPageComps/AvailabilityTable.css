@@ -1,0 +1,68 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+  }
+  
+  th {
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:hover td {
+    background-color: #f5f5f5;
+  }
+  
+  .availability-table {
+    width: 100%;
+}
+
+.availability-table .month {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.availability-table .weekdays {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.availability-table .date {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.availability-table .status {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+  .availability-table .status.available {
+    color: #008000;
+}
+
+.availability-table .status.not-available {
+    color: #ff0000;
+}
