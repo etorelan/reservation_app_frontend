@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Hotel Reservation App Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack web application's frontend built with React, Firestore, and integrated with Stripe for payment processing. The application allows users to search for hotels, view details, make reservations, and process payments securely.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User Authentication: Users can sign up, log in, and manage their accounts.
+- Hotel Search: Users can search for hotels based on location, dates, and other criteria.
+- Hotel Details: Information about each hotel, room types, and availability.
+- Reservation Management & Payment Processing: Secure payment processing using Stripe integration.
+- Background Task Processing: Celery with Redis integration for handling background tasks and asynchronous processing.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React: Frontend user interface built with React framework.
+- Firebase Authentication: Used for user authentication and authorization.
+- Stripe: Payment processing integration for handling secure transactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/etorelan/reservation_app_frontend.git
+```
 
-### `npm run build`
+2. Install frontend dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd reservation_app_frontend/
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Set up Firebase Firestore:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create a Firebase project and set up Firestore.
+- Copy the Firebase configuration details into your frontend settings.
+- Ensure Firestore rules allow read and write access as required.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Set up environment variables:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Create a `.env` file in the root directory and set the variables defined in cloudConfig.js:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+5. Start the frontend development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is licensed under the MIT License
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Special thanks to the developers of React, Firestore, and Stripe for their amazing tools and documentation.
+- Thanks to the open-source community for providing helpful resources and tutorials.
