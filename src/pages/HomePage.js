@@ -46,6 +46,10 @@ const HomePage = () => {
 		  <Typography variant="h4" gutterBottom>Find your dream destination with us!</Typography>
 		  <Button variant="contained" color="primary" style={{ margin: "20px" }} onClick={handleClick}>Explore Hotels</Button>
 		  <Typography variant="body1">Already have a reservation? <a href="/login">Login here</a></Typography>
+		  <Typography variant="body1" sx={{ color: 'red', fontWeight:"bold", marginTop:"20px"}}>
+		  	To see what a complete entry looks like, check "Top Resort Turkey" or "Bot Resort Greece", as other entries do not have 
+			fully furbished information, since there are 42k+ establishments in this demo
+		   </Typography>
 		</div>
 	  );
 		  
